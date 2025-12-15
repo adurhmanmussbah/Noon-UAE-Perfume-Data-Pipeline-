@@ -147,6 +147,21 @@ Dataset reflects actual marketplace conditions
 
 🗄️ Database Schema ([Noon2].sql)
 
+📊 Current Output >> 6584 Products from 100 pages
+
+##Log
+--------------------------------------------------------
+2025-12-15 02:55:44,598 - INFO - Scraping page 91
+2025-12-15 02:55:50,932 - INFO - Scraping page 92
+2025-12-15 02:56:00,152 - INFO - Scraping page 93
+2025-12-15 02:56:08,216 - INFO - Scraping page 94
+2025-12-15 02:56:16,648 - INFO - Scraping page 95
+2025-12-15 02:56:25,658 - INFO - Scraping page 96
+2025-12-15 02:56:35,065 - INFO - Scraping page 97
+2025-12-15 02:56:43,506 - INFO - Scraping page 98
+2025-12-15 02:56:52,995 - INFO - Scraping page 99
+2025-12-15 02:57:00,688 - INFO - Scraping page 100
+----------------------------------------------------------
 
 
 
