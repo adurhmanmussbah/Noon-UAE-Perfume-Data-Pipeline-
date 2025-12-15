@@ -311,6 +311,52 @@ Score stays 0 → 1 range
 ### SQL View (v_noon_analytics.sql) for analysis and visualization
 
 
+### Phase 4: Exploratory Analysis & Distribution Insights
+
+this phase focuses on understanding the marketplace structure through distributions, segmentation, and KPI diagnostics.
+The goal is to convert v_noon_analytics into clear business insights that guide pricing strategy, brand positioning, and demand modeling.
+
+## Using SQL (Analysis.sql)
+
+Questions Answered  
+    Which brands dominate listings volume?
+    Which perfume types are most common (EDP/EDT/Oil/etc.)?
+    What are typical ranges of price_per_ml by brand / type?
+    How many products have discounts?
+    Average discount % by brand / type?
+    Do discounts correlate with demand signals?
+    Who are the top brands by average demand score?
+
+## Using Python (Analysis.py)   
+I used matplotlib to validate and visualize SQL-derived metrics such as demand score, discount impact, and price-per-ml before building dashboards in Power BI. This ensured transparency and correctness of business logic.
+
+
+(demand_by_discount_boxplot.png / demand_distribution.png / ppml_distribution_log10.png / ppml_distribution_raw.png /top_brands_by_demand.png / value_map_ppml_vs_demand.png )
+The analysis revealed the following insights:
+## Demand Score behavior
+Products naturally split into three groups:
+no signal (no ratings & no discount), discount-driven, and high-demand performers.
+The demand score successfully differentiates cold listings from genuinely popular products.
+
+## Impact of discounts
+Discounted products show a significantly higher median demand score than non-discounted ones.
+Discounts act as a strong demand booster, but only when combined with customer engagement (ratings).
+
+## Price per ML normalization
+Raw price-per-ml values are highly skewed due to size variation (oils, travel sprays, luxury items).
+Applying a log scale reveals clear pricing tiers and enables fair comparison across different sizes and formats.
+
+## Brand performance
+Brands such as Lanvin, Calvin Klein, Viktor & Rolf, Issey Miyake, and Rasasi show consistently high average demand, not just isolated best-sellers.
+
+## Value positioning (Price vs Demand)
+A value map (price-per-ml vs demand score) highlights:
+    Underpriced high-demand products (best value)
+    High-demand premium products (luxury winners)
+    Overpriced low-demand products (pricing risk)
+This view helps decide where to raise prices, where to protect premium pricing, and where price reductions or product changes are needed.
+    
+    
 
 
 
