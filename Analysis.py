@@ -15,7 +15,7 @@ conn = pyodbc.connect(
     "SERVER=joba;"
     "DATABASE=Perfume;"
     "UID=sa;"
-    "PWD=P@$$w0rd"
+    "PWD=***********"
 )
 
 df = pd.read_sql("SELECT * FROM dbo.v_noon_analytics", conn)
@@ -164,3 +164,4 @@ print(flags.head(20))
 flags.to_csv(os.path.join(REPORT_DIR, "overpriced_low_demand_flags.csv"), index=False)
 
 print(f"\nSaved outputs to: {REPORT_DIR}")
+
