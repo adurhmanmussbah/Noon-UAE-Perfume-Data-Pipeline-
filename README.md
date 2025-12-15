@@ -101,7 +101,6 @@ Handles real-world patterns such as:
 - `50.0 ml`
 - `200 ML`
 
-```python
 def extract_size_ml(title: str):
     matches = re.findall(
         r"(\\d{1,4}(?:\\.\\d+)?)\\s*[-]?\\s*(ml|m\\s*l)",
@@ -120,8 +119,6 @@ Eau de Cologne (EDC)
 Body Spray
 Generic Perfume
 
-
-```python
 
 if "perfume oil" in t:
     return "Perfume Oil"
