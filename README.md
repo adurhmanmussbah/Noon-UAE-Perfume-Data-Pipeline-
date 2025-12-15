@@ -144,3 +144,10 @@ Missing category rank = not ranked
 No artificial data filling
 Dataset reflects actual marketplace conditions
 
+
+🗄️ Database Schema ([Noon2].sql)
+
+
+
+
+
